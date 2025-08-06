@@ -1,0 +1,12 @@
+
+Um modelo semântico consiste em todos os dados conectados, transformações, relações e cálculos. Para seguir o fluxo do Power BI, primeiro conecte-se a dados, transforme-os e crie relações e cálculos para criar um modelo semântico.
+
+Primeiro, conecte-se a todas as fontes de dados necessárias. Em seguida, limpe e transforme os dados de acordo com suas necessidades. Adicione relações entre tabelas e cálculos para estender o modelo semântico. Depois de tudo isso, agora você pode criar um relatório.
+
+Um bom modelo semântico oferece os seguintes benefícios:
+
+A exploração de dados é mais rápida.
+As agregações são mais simples de criar.
+Os relatórios são mais precisos.
+A escrita de relatórios leva menos tempo.
+Os relatórios são mais fáceis de manter no futuro.
