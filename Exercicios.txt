@@ -1,0 +1,1 @@
+1 - criar uma media entre a data de hoje com a data do pedido.
