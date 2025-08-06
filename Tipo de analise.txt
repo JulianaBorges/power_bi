@@ -1,0 +1,4 @@
+- Analise ABC
+- Medias e total
+- Análise de cenárias
+- Outra análises

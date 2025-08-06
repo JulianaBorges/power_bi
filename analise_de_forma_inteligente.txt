@@ -1,0 +1,86 @@
+Escola: Alura
+Curso relacionado: Analisando dados de forma inteligente.
+Data: 26/07/2025
+
+
+
+Vamos analisar as perguntas:
+
+Qual foi o preço médio de venda da gasolina comum por estado no último mês da base?
+Quantas revendas vendem gasolina acima da média nacional?
+Qual bandeira teve o preço médio por tipo de combustível?
+Qual é a diferença percentual entre o maior e menor preço praticado de diesel em cada estado?
+Qual o comportamento de preços ao longo do tempo por tipo de combustível?
+Qual é o estado com o maior preço médio da gasolina comum?
+Quantas amostras foram realizadas em todo o período?
+Os preços tendem a ser maiores em qual período do mês?
+
+================= /// ===================== /// ========================= /// ================
+	Tabela
+
+Tabela dimensão
+
+Tabela fatos
+
+
+	Cardinalidade dos relacionamentos
+
+
+- Um para Muito = 1:N
+
+tabela cliente = cadastra somente uma vez.
+tabela venda = cadastra compras do cliente varias vezes.
+
+**Normal aparecer varias tabelas dimensão rodeando uma tabela fato.
+
+- Um para Um = 1:1
+
+tabela cliente = cadastra o cliente somente uma vez.
+tabela dados pessoais (idade, gênero, peso) = cadastra somente uma vez.
+
+**quando temos o exemplo acima é indicado criar somente uma tabela ou estruturar em tabelas dimensões para economia de processamento.
+
+- Muitos para Muitos (N:N)
+tabela venda = compras realizadas varias vezes.
+tabela endereço de entrega = 
+
+
+	Direção do Filtro Cruzado
+
+Unidirecional (Single): Os filtros se propagam em uma única direção da tabela de origem para a de destino. Exemplo: a tabela Produtos filtra a tabela Vendas.
+
+Bidirecional (both): Os filtros se propagam nos dois sentidos. Use apenas quando for realmente necessário, pois pode aumentar a complexidade e gerar ambiguidade nos resultados.
+
+
+	Esquemas Estrela e Snowflake
+
+
+- Esquema Estrela é composta por uma tabela fato cercada por tabelas dimensões.
+- Esquema Snowflake é a tabela fato conectada as tabelas dimensões que estão ligadas a outra tabelas dimensões, evitado 
+
+
+
+
+---------------------- // ------------------- // ---------------------- // ------------------
+
+Exemplo Prático
+Vamos supor que você está trabalhando em um projeto de vendas. Aqui está um exemplo de como você pode organizar suas medidas:
+
+Pasta Vendas
+
+TotalVendas: Soma de todas as vendas.
+MediaVendas: Média das vendas.
+MaximoVendas: Maior valor de venda.
+Pasta Clientes
+
+TotalClientes: Contagem de clientes.
+ClientesAtivos: Contagem de clientes que fizeram compras no último mês.
+Pasta Financeiro
+
+TotalCustos: Soma de todos os custos.
+Lucro: Calculado como TotalVendas - TotalCustos.
+
+
+
+
+

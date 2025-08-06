@@ -1,0 +1,13 @@
+
+======= Valores vazios (funções BLANK e ISBLANK) ======== 
+
+-> MinhaColunaCalculada = IF(ISBLANK([MinhaColuna]), BLANK(), [MinhaColuna])
+
+-> IF(ISBLANK([MinhaColuna]), "Valor Vazio", "Valor Preenchido")
+
+
+
+
+-> DentroDoPrazo = COUNTROWS(FILTER('CarroEngenharia',DATEDIFF('CarroEngenharia'[DATA DO COMPROMETIMENTO], TODAY(), DAY) <= 90))
+
+-> Prazo = if(DATEDIFF(CarroEngenharia[DATA ENTRADA],TODAY(),DAY) > 90, "Vencido", "Em andamento")
